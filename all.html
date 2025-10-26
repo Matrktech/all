@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Access Hub</title>
+    <!-- Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import and fallback */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background for contrast */
+        }
+        /* Custom utility for link hover effect */
+        .link-card-transition {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .link-card-transition:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4">
+
+    <!-- Main Header -->
+    <header class="w-full max-w-4xl text-center py-10">
+        <h1 class="text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">
+            MATRK Hub <span class="text-blue-600">🚀</span>
+        </h1>
+        <p class="text-lg text-gray-500">
+            Quick access to all your deployed applications.
+        </p>
+    </header>
+
+    <!-- Links Grid Container -->
+    <main class="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
+        <!-- Link Data Structure:
+             Each link is an <a> tag styled as a card.
+             The data-name attribute is used to easily identify the project name in the script.
+        -->
+
+        <!-- Link 1: M-Typing Game -->
+        <a href="https://mtypinggame.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">⌨️</span>
+                <h2 class="text-xl font-semibold text-gray-800">Typing Game</h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">Learn Typing</p>
+        </a>
+
+        <!-- Link 2: Matrkai -->
+        <a href="https://matrkai.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">🤖</span>
+                <h2 class="text-xl font-semibold text-gray-800">Matr Kai</h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">find Your Desire </p>
+        </a>
+
+        <!-- Link 3: Prof Danai -->
+        <a href="https://profdanai.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">👨‍🏫</span>
+                <h2 class="text-xl font-semibold text-gray-800">Prof Dan Ai</h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">profdanai.netlify.app</p>
+        </a>
+
+        <!-- Link 4: WWANO -->
+        <a href="https://wwano.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">🌐</span>
+                <h2 class="text-xl font-semibold text-gray-800">WWANO Services </h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">wwano.netlify.app</p>
+        </a>
+
+        <!-- Link 5: Dotbo -->
+        <a href="https://dotbo.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">⚫️</span>
+                <h2 class="text-xl font-semibold text-gray-800">Dotbox game</h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">dotbo.netlify.app</p>
+        </a>
+
+        <!-- Link 6: R Puzzle -->
+        <a href="https://rpuzzle.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">🧩</span>
+                <h2 class="text-xl font-semibold text-gray-800">Ronah Word Puzzle</h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">You logical Puzzle </p>
+        </a>
+
+        <!-- Link 7: Bidannet -->
+        <a href="https://bidannet.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">💰</span>
+                <h2 class="text-xl font-semibold text-gray-800">Bidan net web site</h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">bidannet.netlify.app</p>
+        </a>
+
+        <!-- Link 8: Track My Student -->
+        <a href="https://trackmystudent.netlify.app" target="_blank" class="link-card-transition bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between hover:border-blue-500">
+            <div class="flex items-center space-x-4 mb-3">
+                <span class="text-3xl">📊</span>
+                <h2 class="text-xl font-semibold text-gray-800">Track My Student </h2>
+            </div>
+            <p class="text-sm text-gray-500 truncate">trackmystudent.netlify.app</p>
+        </a>
+
+    </main>
+
+    <!-- Simple JavaScript for Console Logging (Example of JS usage) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Project Hub loaded successfully!');
+
+            // Example of using JS to log the click event to the console
+            const links = document.querySelectorAll('.link-card-transition');
+            links.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const appName = link.querySelector('h2').textContent;
+                    console.log(`Navigating to: ${appName}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
